@@ -1,0 +1,44 @@
+[
+    {
+        "id": "sam101",
+        "phone": "Samsung Galaxy S22",
+        "price": 899,
+        "phoneImage": "https://i.ibb.co/jhQRJYK/s22.png",
+        "brand": "samsung"
+    },
+    {
+        "id": "sam102",
+        "phone": "Samsung Galaxy Z Flip",
+        "price": 1199,
+        "phoneImage": "https://i.ibb.co/bHLnks7/z-flip.png",
+        "brand": "samsung"
+    },
+    {
+        "id": "sam103",
+        "phone": "Samsung Galaxy Note 20",
+        "price": 1399,
+        "phoneImage": "https://i.ibb.co/r7trTmz/note-20.png",
+        "brand": "samsung"
+    },
+    {
+        "id": "iph101",
+        "phone": "iPhone 12",
+        "price": 899,
+        "phoneImage": "https://i.ibb.co/qRJhWCX/iphone-12-sin-fondo.png",
+        "brand": "apple"
+    },
+    {
+        "id": "iph102",
+        "phone": "iPhone 12 Pro",
+        "price": 1299,
+        "phoneImage": "https://i.ibb.co/VVvHSM0/iphone-12-pro.png",
+        "brand": "apple"
+    },
+    {
+        "id": "iph103",
+        "phone": "iPhone 12 Pro Max",
+        "price": 1499,
+        "phoneImage": "https://i.ibb.co/tbcHv9c/iphone-12-pro-max.png",
+        "brand": "apple"
+    }
+]

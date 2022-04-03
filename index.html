@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIX Tech Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+        </script>
+    <script defer src="js/variables.js"></script>
+    <script defer src="js/funciones.js"></script>
+    <script defer src="js/proyecto.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/luxon@2.3.1/build/global/luxon.min.js"></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark" id="navbar">
+        <div class="container">
+            <a href="#" class="navbar-brand">SIX Tech</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#iphones" class="nav-link">iPhones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#galaxy" class="nav-link">Galaxy Phones</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="bg-dark text-light p-5 text-center text-sm-start">
+        <div class="container">
+            <div class="d-sm-flex">
+                <div>
+                    <h1>Your dream Phone <br> <span class="text-warning">At a ridiculous Price</span></h1>
+                    <p class="my-4">
+                        Here at <i>SIX Tech</i>, we make sure you get the Phone you didn't even know you wanted for a
+                        price you weren't willing to pay, which cost is 10 times lower than the Suggested Retail
+                        Price.<br>
+                        You know what we did about it? We just dropped our prices a little bit.<br>
+                        You know why? Because you will never find out we are still scamming you.<br><i>SIX
+                            Tech</i>.<br>We suck, but you'll never find out.
+                    </p>
+                </div>
+                <div class="pt-2">
+                    <img class="img-fluid d-none d-lg-block"
+                        src="https://support.apple.com/library/APPLE/APPLECARE_ALLGEOS/SP851/sp851-iphone13.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section onclick="uploadCart()">
+    <!--Samsung phones pics-->
+    <img src="https://i.ibb.co/Fs1g4d2/Merged-Images-4.jpg" class="img-fluid d-none d-xl-block" alt="">
+    <img src="https://i.ibb.co/b7PzjmK/Merged-Images.jpg" class="img-fluid d-none d-sm-block d-xl-none" alt="">
+    <img src="https://i.ibb.co/TmJwNW6/Merged-Images-solo-2.jpg" class="img-fluid d-block d-sm-none" alt="">
+
+    <!--The Samsung phones-->
+    <div class='container-fluid row d-flex justify-content-around mb-5' id="samsungShop">
+        <div class="container text-center h1 mt-5" id="galaxy">Samsung Galaxy Phones</div>
+
+    </div>
+
+    <!--iPhones pics-->
+    <img src="https://i.ibb.co/BnLW0h8/iphone-4-imagenes.png" class="img-fluid d-none d-xl-block" alt="">
+    <img src="https://i.ibb.co/GnTZ5k7/iphone-3-imagenes.png" class="img-fluid d-none d-sm-block d-xl-none" alt="">
+    <img src="https://i.ibb.co/prhRQWw/iphone-2-imagenes.png" class="img-fluid d-block d-sm-none" alt="">
+
+    <!--The iPhones-->
+    <div class='container-fluid row d-flex justify-content-around mb-5' id="appleShop">
+        <div class="container text-center h1 mt-5" id="iphones">iPhones</div>
+    </div>
+    <hr>
+    <div class="invisible" id="fullCart">
+        <div class="container mt-5 mb-1">
+            <div class="d-flex justify-content-center row">
+                <div class="col-md-8">
+                    <div class="p-2 h4" id="shopCart">Shopping cart</div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="d-flex justify-content-center row">
+                <div class="col-md-6 bg-light">
+                    <div class="d-flex flex-row align-items-center p-2 mt-2 mb-2 px-3 rounded">
+                        <div class="col-6">
+                            <p class="mb-0 d-flex align-items-center">
+                                <span class="text-muted">Order total: &nbsp</span> <span class="fw-normal"> U$D <span class="lead fw-normal" id="cartTotal">0</span></span>
+                            </p>
+                        </div>
+                        <div class="col-6 text-end">
+                            <button type="button" class="btn btn-success" id="goToCheckout">Proceed to Checkout</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <div class="container">
+        <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="#navbar" class="nav-link px-2 text-muted">Home</a></li>
+                <li class="nav-item"><a href="https://www.coderhouse.com/" target="_blank"
+                        class="nav-link px-2 text-muted">About</a></li>
+            </ul>
+            <p class="text-center text-muted">© 2022 SIX Tech</p>
+        </footer>
+    </div>
+
+
+</body>
+
+</html>
